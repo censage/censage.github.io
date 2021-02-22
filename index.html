@@ -1,41 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <style>
-      html,
-      body {
-        height: 90%;
-      }
-
-      .Container {
-        text-align: center;
-        height: 100%;
-      }
-
-      .Container:before {
-        content: '';
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      .Content {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <div class="Container">
-      <div class="Content">
-        <img id="myImage" src="images/logo.png">
-      </div>
-    </div>
-  </body>
-
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <style>
+  	.loader-wrapper { margin: auto;width:100%;text-align:center;height:100%;background-color:#fff; }
+	.loader { position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0; border: 16px solid #ffffff; border-top: 16px solid #ffa500; border-radius: 50%; width: 120px; height: 120px; animation: spin 2s linear infinite; }
+	@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+<link href="build/app.3c575abd867071f207e8.css" rel="stylesheet"></head>
+<body id="appController" ng-controller="appController as app" ng-include="'/templates/app.tmpl.html'">
+<div class="loader-wrapper"><div class="loader"></div></div>
+<script type="text/javascript" src="build/manifest.394ea2070ab1d863e1df.js"></script><script type="text/javascript" src="build/vendor.d83893eea90ede22cb40.js"></script><script type="text/javascript" src="build/app.3c575abd867071f207e8.js"></script></body>
 </html>
