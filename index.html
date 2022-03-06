@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Language" content="en">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
   <style>
-  	.loader-wrapper { margin: auto;width:100%;text-align:center;height:100%;background-color:#fff; }
-	.loader { position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0; border: 16px solid #ffffff; border-top: 16px solid #ffa500; border-radius: 50%; width: 120px; height: 120px; animation: spin 2s linear infinite; }
+    body { background-color:#141a1e; }
+  	.loader-wrapper { margin: auto;width:100%;text-align:center;height:100%;background-color:#141a1e; }
+	.loader { position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0; border: 16px solid #141a1e; border-top: 16px solid #202a30; border-radius: 50%; width: 120px; height: 120px; animation: spin 2s linear infinite; }
 	@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
-<link href="build/app.3c575abd867071f207e8.css" rel="stylesheet"></head>
-<body id="appController" ng-controller="appController as app" ng-include="'/templates/app.tmpl.html'">
+<link href="build/app.css" rel="stylesheet"></head>
+<body id="mainController" layout="column" ng-controller="mainController as main" ng-include="'/templates/index.tmpl.html'" bgcolor="#141a1e" style="background-color: #141a1e;">
 <div class="loader-wrapper"><div class="loader"></div></div>
-<script type="text/javascript" src="build/manifest.394ea2070ab1d863e1df.js"></script><script type="text/javascript" src="build/vendor.d83893eea90ede22cb40.js"></script><script type="text/javascript" src="build/app.3c575abd867071f207e8.js"></script></body>
+<script defer src="build/vendor.js"></script><script defer src="build/app.js"></script></body>
 </html>
